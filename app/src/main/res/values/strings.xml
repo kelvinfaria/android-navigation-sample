@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Navigation Sample</string>
+    <string name="navigate_to_new_activity_text">Navigate to new activity</string>
+    <string name="main_activity_text">Main Activity</string>
+    <string name="coming_from_text">Coming From: %1$s</string>
+    <string name="nav_host_activity_text">Nav Host Activity</string>
 </resources>
