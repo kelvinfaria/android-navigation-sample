@@ -1,4 +1,4 @@
-package com.kelvinfaria.navigationsample.intentnavigation
+package com.kelvinfaria.navigationsample.intent_navigation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

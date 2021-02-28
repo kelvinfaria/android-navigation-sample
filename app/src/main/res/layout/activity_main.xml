@@ -4,17 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".intent_navigation.MainActivity">
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/navigateButton"
+        android:id="@+id/navigateToFragmentHostActivityButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/navigate_to_new_activity_text"
+        android:text="@string/navigate_to_fragment_host_activity_text"
+        android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintVertical_bias="0.45" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/navigateToNavHostActivityButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/navigate_to_nav_host_activity_text"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/navigateToFragmentHostActivityButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

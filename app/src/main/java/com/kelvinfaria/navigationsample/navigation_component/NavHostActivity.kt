@@ -1,10 +1,10 @@
-package com.kelvinfaria.navigationsample.navigationcomponent
+package com.kelvinfaria.navigationsample.navigation_component
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.kelvinfaria.navigationsample.R
 import com.kelvinfaria.navigationsample.databinding.ActivityNavHostBinding
-import com.kelvinfaria.navigationsample.intentnavigation.ORIGIN
+import com.kelvinfaria.navigationsample.intent_navigation.utils.ORIGIN
 
 class NavHostActivity : AppCompatActivity() {
 
