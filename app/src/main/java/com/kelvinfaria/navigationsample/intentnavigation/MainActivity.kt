@@ -1,8 +1,10 @@
-package com.kelvinfaria.navigationsample
+package com.kelvinfaria.navigationsample.intentnavigation
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.kelvinfaria.navigationsample.navigationcomponent.NavHostActivity
+import com.kelvinfaria.navigationsample.R
 import com.kelvinfaria.navigationsample.databinding.ActivityMainBinding
 
 const val ORIGIN = "com.kelvinfaria.navigationsample.ORIGIN"
@@ -31,6 +33,7 @@ class MainActivity : AppCompatActivity() {
             flags = Intent.FLAG_ACTIVITY_SINGLE_TOP
             putExtra(ORIGIN, getString(R.string.main_activity_text))
         }
+
         startActivity(intent)
     }
 }

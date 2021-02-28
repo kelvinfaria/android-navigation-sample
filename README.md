@@ -19,6 +19,5 @@ plugin
 
 dependencies  
 navigation_version = "2.3.0"
-
 - implementation "androidx.navigation:navigation-fragment-ktx:$navigation_version"
 - implementation "androidx.navigation:navigation-ui-ktx:$navigation_version"
