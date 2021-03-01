@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.kelvinfaria.navigationsample.navigation_component.NavHostActivity
 import com.kelvinfaria.navigationsample.R
+import com.kelvinfaria.navigationsample.data.NavigationObject
 import com.kelvinfaria.navigationsample.databinding.ActivityMainBinding
 import com.kelvinfaria.navigationsample.intent_navigation.utils.startSingleTopActivity
 
@@ -11,25 +12,31 @@ import com.kelvinfaria.navigationsample.intent_navigation.utils.startSingleTopAc
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-    private lateinit var originText: String
+    private lateinit var mainActivityText: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        supportActionBar?.title = getString(R.string.main_activity_text)
-        originText = getString(R.string.main_activity_text)
+        mainActivityText = getString(R.string.main_activity)
+        supportActionBar?.title = mainActivityText
+
         handleButtonClick()
     }
 
     private fun handleButtonClick() {
         binding.navigateToFragmentHostActivityButton.setOnClickListener {
-            startSingleTopActivity<FragmentHostActivity>(originText)
+            startSingleTopActivity<FragmentHostActivity>(
+                NavigationObject(
+                    mainActivityText,
+                    getString(R.string.intent)
+                )
+            )
         }
 
         binding.navigateToNavHostActivityButton.setOnClickListener {
-            startSingleTopActivity<NavHostActivity>(originText)
+            startSingleTopActivity<NavHostActivity>(mainActivityText)
         }
     }
 }

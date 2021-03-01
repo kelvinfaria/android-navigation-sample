@@ -1,9 +1,13 @@
 <resources>
     <string name="app_name">Navigation Sample</string>
-    <string name="main_activity_text">Main Activity</string>
-    <string name="fragment_host_activity_text">Fragment Host Activity</string>
-    <string name="nav_host_activity_text">Nav Host Activity</string>
-    <string name="navigate_to_fragment_host_activity_text">Navigate to FragmentHostActivity</string>
-    <string name="navigate_to_nav_host_activity_text">Navigate to NavHostActivity</string>
-    <string name="coming_from_text">Coming From: %1$s</string>
+    <string name="main_activity">Main Activity</string>
+    <string name="fragment_host_activity">Fragment Host Activity</string>
+    <string name="nav_host_activity">Nav Host Activity</string>
+    <string name="navigate_to_fragment_host_activity">Navigate to FragmentHostActivity</string>
+    <string name="navigate_to_nav_host_activity">Navigate to NavHostActivity</string>
+    <string name="coming_from">Coming From: %1$s</string>
+    <string name="navigation_type">Navigation Type: %1$s</string>
+    <string name="intent">Intent</string>
+    <string name="navigation_component">Navigation Component</string>
+
 </resources>

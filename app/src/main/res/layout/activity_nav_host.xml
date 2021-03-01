@@ -7,10 +7,10 @@
     tools:context=".navigation_component.NavHostActivity">
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/activityOriginTextView"
+        android:id="@+id/navigationOriginTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/coming_from_text"
+        android:text="@string/coming_from"
         android:textSize="18sp"
         android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
