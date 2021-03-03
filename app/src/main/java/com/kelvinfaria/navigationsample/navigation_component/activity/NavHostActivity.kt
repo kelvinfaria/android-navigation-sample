@@ -1,4 +1,4 @@
-package com.kelvinfaria.navigationsample.navigation_component
+package com.kelvinfaria.navigationsample.navigation_component.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -16,12 +16,5 @@ class NavHostActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         supportActionBar?.title = getString(R.string.nav_host_activity)
-        setupView()
-    }
-
-    private fun setupView() {
-
-        val originText = intent.getStringExtra(ORIGIN)
-        binding.navigationOriginTextView.text = getString(R.string.coming_from, originText)
     }
 }

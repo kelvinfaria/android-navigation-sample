@@ -9,5 +9,7 @@
     <string name="navigation_type">Navigation Type: %1$s</string>
     <string name="intent">Intent</string>
     <string name="navigation_component">Navigation Component</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

@@ -20,7 +20,7 @@
 
         <activity android:name=".intent_navigation.FragmentHostActivity" />
 
-        <activity android:name=".navigation_component.NavHostActivity" />
+        <activity android:name=".navigation_component.activity.NavHostActivity" />
     </application>
 
 </manifest>
